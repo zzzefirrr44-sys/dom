@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="todo-container">
+        <h1>ToDo List</h1>
+
+        <div class="todo-box">
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Додайте завдання"
+                autocomplete="off"
+            >
+
+            <div class="filters">
+                <button class="filter active" data-filter="all">Усі</button>
+                <button class="filter" data-filter="active">Невиконані</button>
+                <button class="filter" data-filter="completed">Виконані</button>
+            </div>
+
+            <ul id="taskList"></ul>
+        </div>
+
+        <p id="emptyMessage">Список завдань порожній</p>
+    </main>
+</body>
+</html>
